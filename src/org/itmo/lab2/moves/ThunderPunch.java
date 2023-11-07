@@ -1,9 +1,6 @@
 package org.itmo.lab2.moves;
 
-import ru.ifmo.se.pokemon.Effect;
-import ru.ifmo.se.pokemon.PhysicalMove;
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
 
 public class ThunderPunch extends PhysicalMove {
     public ThunderPunch() {
@@ -14,6 +11,9 @@ public class ThunderPunch extends PhysicalMove {
     public void applyOppEffects(Pokemon opp) {
         if (Math.random() <= 0.1)
             Effect.flinch(opp);
+        if (opp.getHP() < opp.getStat(Stat.HP)/2.0){
+            System.out.println("Неплохо");
+        }
     }
 
     @Override

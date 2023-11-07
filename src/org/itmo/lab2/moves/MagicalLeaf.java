@@ -20,6 +20,14 @@ public class MagicalLeaf extends SpecialMove {
     protected String describe() {
         return "Мэджиклифит";
     }
+
+    @Override
+    public void applyOppEffects(Pokemon opp) {
+        if (opp.getHP() < opp.getStat(Stat.HP)/2.0){
+            System.out.println("Неплохо");
+        }
+    }
+
 }
 
 

@@ -20,6 +20,14 @@ public class DoubleTeam extends StatusMove {
      protected String describe() {
         return "Даблтимит";
     }
+
+    @Override
+    public void applyOppEffects(Pokemon opp) {
+        if (opp.getHP() < opp.getStat(Stat.HP)/2.0){
+            System.out.println("Неплохо");
+        }
+    }
+
 }
 
 

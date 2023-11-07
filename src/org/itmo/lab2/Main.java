@@ -2,7 +2,7 @@ package org.itmo.lab2;
 
 import org.itmo.lab2.pockemons.*;
 import ru.ifmo.se.pokemon.Battle;
-
+// после атаки, если абсолют хп покемона меньше поолвины, вывод неплохо
 
 public class Main {
     public static void main(String[] args) {

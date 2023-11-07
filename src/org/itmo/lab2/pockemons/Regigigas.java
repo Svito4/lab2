@@ -15,3 +15,7 @@ public class Regigigas extends Pokemon {
         setMove(new ThunderPunch(), new AerialAce(), new FirePunch(), new StoneEdge());
     }
 }
+
+
+
+////final double public healthopp = 110.0;

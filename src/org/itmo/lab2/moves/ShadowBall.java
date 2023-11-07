@@ -19,6 +19,9 @@ public class ShadowBall extends SpecialMove {
         if (Math.random() <= 0.2) {
             opp.setMod(Stat.SPECIAL_DEFENSE, -1);
         }
+        if (opp.getHP() < opp.getStat(Stat.HP)/2.0){
+            System.out.println("Неплохо");
+        }
     }
 
     @Override
